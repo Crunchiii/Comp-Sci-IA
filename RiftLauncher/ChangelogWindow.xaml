@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiftLauncher"
+        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Name="Changelog" x:Class="RiftLauncher.ChangelogWindow"
+        mc:Ignorable="d"
+        Loaded="Changelog_Loaded"
+        Closing="Changelog_Closing"
+        Title="ChangelogWindow" Height="450" Width="800" Icon="/Assets/Images/Logo-export.png">
+    <Grid Visibility="Hidden">
+
+        <Wpf:WebView2 Name="view" KeyDown="WebView2_KeyDown"></Wpf:WebView2>
+
+    </Grid>
+</Window>

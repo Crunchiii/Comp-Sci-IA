@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RiftLauncher.App">
+    <Position X="8.5" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>IAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIACAABAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RiftLauncher.ConfigWindow" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAABgAAAAAAAACBgAAAAAAAAAgAA=</HashCode>
+      <FileName>ConfigWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RiftLauncher.ErrorWindow" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAABAAAIAAAAAAgACAAAAAABAAAABAAA=</HashCode>
+      <FileName>ErrorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RiftLauncher.GameService">
+    <Position X="16.25" Y="5.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAACBAAACgQECAAAAUCAAAAAAAAAAAAABAAAAIAAgAI=</HashCode>
+      <FileName>GameService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RiftLauncher.GithubService">
+    <Position X="4.75" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAEAAAjABAEAAAACABAAABAEAAAAUQAgAA=</HashCode>
+      <FileName>GithubService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RiftLauncher.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAQAkAAAACAAAAAQQAAAAAAAAoAAAJgABAAgAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.75" Collapsed="true" />
+  </Class>
+  <Class Name="RiftLauncher.StartupWindow" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAQAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StartupWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

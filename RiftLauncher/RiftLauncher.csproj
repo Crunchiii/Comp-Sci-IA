@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>tnpLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\close.png" />
+    <None Remove="Assets\Images\closered.png" />
+    <None Remove="Assets\Images\download.png" />
+    <None Remove="Assets\Images\iconUpdate.png" />
+    <None Remove="Assets\Images\launcher.png" />
+    <None Remove="Assets\Images\launcherBoxLogo.ico" />
+    <None Remove="Assets\Images\launcherBoxLogo.png" />
+	<None Remove="Assets\Images\launcher_art.png" />
+	<None Remove="Assets\Images\Logo-export.png" />
+	<None Remove="Assets\Images\settings-green.png" />
+	<None Remove="Assets\Images\settings.png" />
+	<None Remove="Assets\Images\settings-transparent.png" />
+	<None Remove="Assets\Images\tnplogo.png" />
+    <None Remove="Assets\Images\Vivaproject-Icon-200.png" />
+    <None Remove="Assets\Images\VivaProject-Icon-24.png" />
+    <None Remove="Assets\Images\VivaProjectLogoSplash_tiny.png" />
+    <None Remove="Assets\Images\VivaProjectLogo_tiny.png" />
+    <None Remove="Assets\Images\vivaProjectMiniLogo.png" />
+    <None Remove="Assets\Images\wrench-regular-24.png" />
+    <None Remove="Assets\Images\x-circle-regular-24.png" />
+	  <None Remove="Assets\Images\RiftTransparent2048.png" />
+	  <None Remove="Assets\Images\groupphoto4.png" />
+	  <None Remove="Assets\Images\tnp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\download.png" />
+    <Resource Include="Assets\Images\settings-green.png" />
+    <Resource Include="Assets\Images\tnplogo.png" />
+    <Resource Include="tnpLogo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Clowd.Squirrel" Version="2.9.42" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1462.37" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="Semver" Version="2.2.0" />
+    <PackageReference Include="SharpCompress" Version="0.32.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\close.png" />
+    <Resource Include="Assets\Images\closered.png" />
+	<Resource Include="Assets\Images\launcher_art.png" />
+	<Resource Include="Assets\Images\Logo-export.png" />
+	<Resource Include="Assets\Images\settings-transparent.png" />
+    <Resource Include="Assets\Images\wrench-regular-24.png" />
+    <Resource Include="Assets\Images\x-circle-regular-24.png" />
+	<Resource Include="Assets\Images\RiftTransparent2048.png" />
+	  <Resource Include="Assets\Images\groupphoto4.png" />
+	  <Resource Include="Assets\Images\tnp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiftLauncher", "RiftLauncher\RiftLauncher.csproj", "{CBF32F2D-812F-4FA8-8838-E94288DA7CC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{21CBBE50-8925-498D-9B33-2334C6ADAE43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF32F2D-812F-4FA8-8838-E94288DA7CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF32F2D-812F-4FA8-8838-E94288DA7CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF32F2D-812F-4FA8-8838-E94288DA7CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF32F2D-812F-4FA8-8838-E94288DA7CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CBBE50-8925-498D-9B33-2334C6ADAE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CBBE50-8925-498D-9B33-2334C6ADAE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CBBE50-8925-498D-9B33-2334C6ADAE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CBBE50-8925-498D-9B33-2334C6ADAE43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE761099-3C0B-4F97-83DB-B47933E29741}
+	EndGlobalSection
+EndGlobal

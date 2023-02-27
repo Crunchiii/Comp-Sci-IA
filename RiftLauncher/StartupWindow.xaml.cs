@@ -1,0 +1,76 @@
+﻿using Squirrel;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace RiftLauncher
+{
+    /// <summary>
+    /// Interaction logic for StartupWIndow.xaml
+    /// </summary>
+    public partial class StartupWindow : Window
+    {
+        private Config cfg;
+        public StartupWindow()
+        {
+            cfg = Config.GetSettings();
+            InitializeComponent();
+        }
+
+        private async void StartupWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            SetProgressBar(1, "Checking for folder existance " + cfg.GameInstallLocation, 0, 4);
+            if (!Directory.Exists(cfg.GameInstallLocation))
+            {
+                SetProgressBar(2, "Folder Not Found, Creating " + cfg.GameInstallLocation, 0, 4);
+                Directory.CreateDirectory(cfg.GameInstallLocation);
+            }
+            if (cfg.CheckforLauncherUpdates)
+            {
+                try
+                {
+                    SetProgressBar(3, "Checking for updates", 0, 4);
+                    string repourl = "https://github.com/Fabeuro/RiftLaucherReleases";
+                    using var mgr = new GithubUpdateManager(repourl);
+                    if (await mgr.UpdateApp() != null)
+                    {
+                        SetProgressBar(4, "Update installed Restarting", 0, 4);
+                        await Task.Delay(1000);
+                        GithubUpdateManager.RestartApp();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    new ErrorWindow(ex, "Updater").ShowDialog();
+                }
+            }            
+            Close();
+        }
+
+        private void StartupWindow_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
+        private void SetProgressBar(int value, string text, int minimum, int maximum)
+        {
+            PrimaryBar.Value = value;
+            PrimaryText.Content = text;
+            PrimaryBar.Maximum = maximum;
+            PrimaryBar.Minimum = minimum;
+        }
+
+    }
+}
