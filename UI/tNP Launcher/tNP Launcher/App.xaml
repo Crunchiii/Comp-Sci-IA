@@ -1,8 +1,0 @@
-﻿<Application x:Class="tNP_Launcher.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:tNP_Launcher"
-             StartupUri="MainWindow.xaml">
-
-</Application>
-    
